@@ -1,29 +1,26 @@
-metadata:
-  pattern-id: onp.base.template
-  pattern-name: base-template
-  organisation-id: demobank
-  pattern-version: 1.0.0
-  pattern-description: some description here
-  pattern-categories: 
-              - bootstrap
 
 lifecycle:
   create:
     commands:
-      - bash lifecycle/create.sh
-
+    - bash lifecycle/create.sh
   delete:
     commands:
-      - bash lifecycle/delete.sh
-
+    - bash lifecycle/delete.sh
   update:
     commands:
-      - bash lifecycle/update.sh
-
+    - bash lifecycle/update.sh
   upgrade:
     commands:
-      - bash lifecycle/upgrade.sh
-
-dependencies:
-
-
+    - bash lifecycle/upgrade.sh
+metadata:
+  organisation-id: demobank
+  pattern-categories:
+  - Other
+  pattern-description: BaaS Platform Provider credits customer's account with provisional
+    and/or final credit (debiting fintech's reserve account, as applicable). Debits
+    customer's account with reversal to provisional credit (crediting fintech's reserve
+    account, as applicable)
+  pattern-id: onp.BaaS.Platform.Provider.credits.customer's.account.with.provisional.and/or.final.credit
+  pattern-name: BaaS Platform Provider credits customer's account with provisional
+    and/or final credit
+  pattern-version: 1.0.0
